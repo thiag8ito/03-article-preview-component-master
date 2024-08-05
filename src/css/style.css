@@ -1,0 +1,132 @@
+html {
+    font-family: "Manrope", sans-serif;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 300px;
+    width: 700px;
+    background-color:  #fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    color: #48556a;
+    border-radius: 10px;
+    display: flex;
+}
+
+.card .main-img {
+    width: 50%;
+    background: url(../images/drawers.jpg) no-repeat center left;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.card .texts {
+    width: 66%;
+    padding: 30px;
+}
+
+.card .texts h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.card .texts p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 20px 0;
+    color: #6d7f97;
+    line-height: 20px;
+}
+
+.texts .avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.texts .avatar .name p {
+    padding: 0;
+    color: #9eafc2;
+}
+
+.texts .avatar .avatar-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.texts .avatar .share-btn {
+    background: url(../images/icon-share.svg) no-repeat center;
+    background-color: #ecf2f8;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    transform: translateX(-3px);
+}
+
+.texts .avatar .share-btn:hover {
+    cursor: pointer;
+}
+
+.texts .avatar .share-window .social:hover {
+    cursor: pointer;
+}
+/* ------------- */
+
+.avatar .share-window {
+    position: absolute;
+    bottom: 0;
+}
+
+.avatar .share-window ul {
+    background-color: #48556a;
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    left: 200px;
+    bottom: 70px;
+    z-index: 1;
+}
+
+.avatar .share-window ul .share {
+    color: #9eafc2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.avatar .share-window .arrow {
+    background-color: #48556a;
+    width: 20px;
+    height: 20px;
+    transform: rotateZ(45deg);
+    position: absolute;
+    left: 315px;
+    bottom: 60px;
+}
+/* ------------- */
+
+.share-window.hide {
+    display: none;
+}
+
+.texts .avatar .share-btn.clicked {
+    background: url(../images/icon-share\ copy.svg) no-repeat center;
+    background-color: #48556a;
+}
